@@ -41,10 +41,29 @@
               id="search-input"
               placeholder="Buscar por título"
             />
+
             <button class="btn btn-primary btn-full" id="btn-new">
               Novo prompt
             </button>
           </div>
+
+          <ul class="prompt-list" id="prompt-list">
+            <li class="prompt-item">
+              <div class="prompt-item-content">
+                <h3 class="prompt-item-title">Título do Prompt</h3>
+                <p class="prompt-item-description">
+                  Descrição breve do prompt para visualização.
+                </p>
+              </div>
+              <button class="btn-icon" title="Remover">
+                <img
+                  src="assets/remove.svg"
+                  alt="Remover"
+                  class="icon icon-trash"
+                />
+              </button>
+            </li>
+          </ul>
         </div>
       </aside>
 
@@ -63,9 +82,11 @@
           class="editable-wrapper"
           id="title-wrapper"
         >
-          <h1 id="prompt-title" class="prompt-title" contenteditable="true">
-            ⚡ Planejamento de tarefas semanais
-          </h1>
+          <h1
+            id="prompt-title"
+            class="prompt-title"
+            contenteditable="true"
+          ></h1>
         </div>
 
         <div
@@ -77,15 +98,7 @@
             id="prompt-content"
             class="prompt-content"
             contenteditable="true"
-          >
-            Me ajude a organizar minha semana de forma equilibrada. Distribua
-            minhas tarefas profissionais e pessoais em blocos de tempo
-            realistas. <br />
-            Sugira horários para foco profundo e momentos para pausas
-            estratégicas. <br />
-            Inclua dicas de priorização. No final, entregue o plano em formato
-            de checklist diário para fácil acompanhamento.
-          </div>
+          ></div>
         </div>
       </main>
     </div>
